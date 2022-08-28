@@ -10,14 +10,15 @@
 </head>
 <body>
     <h3>You can contact me from submiting this form</h3>
-    <form action="mailto:sy907219@gmail.com" method="POST" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" name="Your Name" class="" autocomplete=""><br>
-        <label>Email:</label>
-        <input type="email" name="Your Email" class="" autocomplete=""><br>
-        <label>Enter your message</label><br>
-        <textarea name="your message" autocomplete=""></textarea><br>
-        <input type="submit">
+    
+    <form action="https://formsubmit.co/sy907219@gmail.com" method="post">
+         <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">       <!-- // By default, after submittin a form the user is shown the FormSubmit "Thank You " page. You can provide an alternative URL for "Thank You page" -->
+         <input type="hidden" name="_captch" value="false">                <!--  // Disable reCAPTCHA _captcha -->
+         <input type="hidden" name="_autoresponse" value="Your custom message"> <!--// _autoresponse -->
+         <!-- <input type="hidden" name="_template" value="box">   // Tamplate -->
+        <input type = "text" name="name" placeholder="Enter the name"><br>
+        <input type = "email" name="email" placeholder = "Your address Email"><br>
+        <button type="submit">Send</button>   
     </form>
 </body>
 </html>
